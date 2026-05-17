@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daydream Luxury Events | Adriana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <h2 class="logo italic" style="font-size: 40px; color: var(--gold);">Daydream</h2>
+      <div class="loading-line"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Daydream Luxury Events</a>
+      <div class="menu-btn" id="menuBtn">
+        <span class="label">MENU</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Menu Overlay -->
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-content">
+      <a href="#services" class="nav-overlay-link italic">Services</a>
+      <a href="#gallery" class="nav-overlay-link italic">Gallery</a>
+      <a href="#about" class="nav-overlay-link italic">About</a>
+      <a href="#contact" class="nav-overlay-link italic">Contact</a>
+    </div>
+    <div class="nav-overlay-footer label">
+      <p>SOUTH FLORIDA — BY APPOINTMENT ONLY</p>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="video del hero/hero_video_720p.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="italic">Where Dreams become Celebrations.</h1>
+      <a href="#contact" class="btn btn-white label">Book a Consultation</a>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span class="label" style="font-size: 8px; margin-top: 8px; letter-spacing: 0.2em;">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-gap">
+    <div class="container">
+      <div class="services-header">
+        <span class="label tag tag-sage">Exquisite Planning</span>
+        <h2>Full-Service Event Curation</h2>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card col-4">
+          <h3>Wedding Planning</h3>
+          <p>Comprehensive management from conceptualization to the final toast, ensuring a seamless journey to your big day.</p>
+        </div>
+        <div class="service-card col-4" style="background-color: var(--blush);">
+          <h3>Event Design</h3>
+          <p>Visual storytelling that transforms venues into immersive experiences reflecting your unique aesthetic.</p>
+        </div>
+        <div class="service-card col-4">
+          <h3>Luxury Rentals</h3>
+          <p>Exclusive access to a curated collection of artisanal furniture, fine china, and bespoke textiles.</p>
+        </div>
+        <div class="service-card col-4" style="background-color: var(--sage); color: var(--white);">
+          <h3 style="color: var(--white);">Custom Florals</h3>
+          <p>Bespoke botanical arrangements that capture the essence of romance with seasonal, premium blooms.</p>
+        </div>
+        <div class="service-card col-4">
+          <h3>Day-of Coordination</h3>
+          <p>Precision execution for the couple who has planned it all but wants to enjoy every moment stress-free.</p>
+        </div>
+        <div class="service-card col-4" style="background-color: var(--gold); color: var(--white); text-align: center;">
+          <h3 style="color: var(--white);">Corporate Events</h3>
+          <p>Elevated brand experiences and luxury galas designed to impress and inspire your guests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section-gap" style="background: #fbf2ed;">
+    <div class="container">
+      <div class="gallery-header">
+        <div>
+          <span class="label tag">A Gallery of Dreams</span>
+          <h2 style="font-size: 40px; margin-top: 16px;">Real Celebrations</h2>
+        </div>
+        <a href="#" class="label" style="border-bottom: 1px solid var(--gold); padding-bottom: 4px;">View All Stories</a>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item col-8 signature-frame">
+          <img src="Sus fotos/daydream_alice_wide_edited.jpg" alt="Event" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_flores_edited.jpg" alt="Florals" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_cake_edited.jpg" alt="Cake" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_dessert_bar_edited.jpg" alt="Desserts" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_alice_edited.jpg" alt="Alice Event" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_carrito_edited.jpg" alt="Cart Display" class="img-cover">
+        </div>
+        <div class="gallery-item col-8 signature-frame">
+          <img src="Sus fotos/daydream_family_group_edited.jpg" alt="Family Group" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_fairy_cake_edited.jpg" alt="Fairy Cake" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_madhatter_edited.jpg" alt="Mad Hatter" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_mushroom_fairies_edited.jpg" alt="Mushroom Fairies" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_pink_castle_edited.jpg" alt="Pink Castle" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/daydream_rabbbithole_edited.jpg" alt="Rabbit Hole" class="img-cover">
+        </div>
+        <div class="gallery-item col-4">
+          <img src="Sus fotos/foto.jpg" alt="Event Detail" class="img-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-gap">
+    <div class="container about-grid">
+      <div class="about-image signature-frame">
+        <img src="foto de la dueña/9C706F66-1818-429E-ACD1-0B4B7BBCFD87.PNG" alt="Adriana" class="img-cover" style="aspect-ratio: 4/5; object-position: center 35%;">
+      </div>
+      <div class="about-content">
+        <span class="label tag tag-sage">The Visionary</span>
+        <h2>Meet Adriana</h2>
+        <p>With a background in fine arts and a passion for the effortless elegance of the Florida coast, I founded Daydream Luxury Events to bridge the gap between imagination and reality.</p>
+        <p>My philosophy is rooted in "Editorial Minimalism"—where every element serves a purpose and beauty is found in the intentional. I believe that a luxury event should feel personal, never staged, and leave a lasting impression of refined joy.</p>
+        <p>As an event planner and stylist in Florida, I dedicate myself to crafting experiences that resonate deeply with my clients and their guests.</p>
+        <div style="margin-top: 32px;">
+          <p class="italic" style="font-size: 24px; color: var(--gold);">Adriana V.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-gap testimonials-section">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="label tag">Kind words from our couples</span>
+      </div>
+      <div class="testimonials-slider-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Adriana turned our vision of a coastal black-tie wedding into a breathtaking reality. Her eye for design is unmatched, and her calm presence made the entire process a joy."</p>
+            <div class="label" style="color: var(--gold);">Eleanor & James</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The floral design alone was worth it. Our guests are still talking about the scent of peonies that filled the ballroom. Adriana is truly an artist who understands luxury."</p>
+            <div class="label" style="color: var(--gold);">Isabella & Marc</div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"A seamless experience from start to finish. We didn't have to worry about a single detail on our wedding day. Adriana's coordination was flawless."</p>
+            <div class="label" style="color: var(--gold);">Sophia & David</div>
+          </div>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-gap">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="label tag tag-sage">Tell us about your daydream</span>
+        <h2>Let's Create Magic</h2>
+        <p style="margin-bottom: 48px;">We limit our bookings each year to ensure every client receives our undivided attention and the highest level of service. Inquire today to secure your date in our calendar.</p>
+        
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+          <span class="material-symbols-outlined" style="color: var(--gold); font-size: 32px;">mail</span>
+          <div>
+            <div class="label" style="font-size: 10px; color: #79776F;">Email Us</div>
+            <div>hello@daydreamluxury.com</div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <span class="material-symbols-outlined" style="color: var(--gold); font-size: 32px;">location_on</span>
+          <div>
+            <div class="label" style="font-size: 10px; color: #79776F;">Studio</div>
+            <div>Florida — By Appointment Only</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form" style="background: var(--white); padding: 48px; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+        <form>
+          <div class="form-row">
+            <div class="form-group floating-label-group">
+              <input type="text" id="fname" placeholder=" " required>
+              <label for="fname" class="label floating-label">First Name</label>
+            </div>
+            <div class="form-group floating-label-group">
+              <input type="text" id="lname" placeholder=" " required>
+              <label for="lname" class="label floating-label">Last Name</label>
+            </div>
+          </div>
+          <div class="form-group floating-label-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label for="email" class="label floating-label">Email Address</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group floating-label-group">
+              <input type="tel" id="phone" placeholder=" " required>
+              <label for="phone" class="label floating-label">Phone Number</label>
+            </div>
+            <div class="form-group floating-label-group">
+              <input type="date" id="date" required>
+              <label for="date" class="label floating-label always-float">Event Date</label>
+            </div>
+          </div>
+          <div class="form-group floating-label-group">
+            <select id="type" required>
+              <option value="" disabled selected></option>
+              <option value="Wedding">Wedding</option>
+              <option value="Baby Shower">Baby Shower</option>
+              <option value="Children's Party">Children's Party</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="type" class="label floating-label always-float">Event Type</label>
+          </div>
+          <div class="form-group floating-label-group">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message" class="label floating-label">Tell us about your vision...</label>
+          </div>
+          <button type="submit" class="btn btn-solid label" style="width: 100%; border: none; margin-top: 16px;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo footer-logo" style="color: var(--ivory);">Daydream Luxury Events</a>
+        <p style="opacity: 0.8; margin-bottom: 24px; max-width: 300px;">Curating ethereal experiences for life's most precious celebrations across the Sunshine State.</p>
+        <p class="label">South Florida — By Appointment Only</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><span class="material-symbols-outlined">photo_camera</span></a>
+          <a href="#" class="social-icon"><span class="material-symbols-outlined">mail</span></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 class="label">Quick Links</h4>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4 class="label">Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <div style="margin-top: 48px; opacity: 0.5; font-size: 12px;">
+          &copy; 2026 Daydream Luxury Events.<br>All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close material-symbols-outlined" id="lightboxClose">close</span>
+    <img src="" alt="Fullscreen Event Image" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/1234567890?text=Hello%20Daydream%20Luxury%20Events,%20I%20would%20like%20to%20plan%20an%20event!" target="_blank" class="whatsapp-btn">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // 1. Custom Cursor
+    const cursorDot = document.querySelector("[data-cursor-dot]");
+    const cursorOutline = document.querySelector("[data-cursor-outline]");
+    
+    if (window.matchMedia("(pointer: fine)").matches) {
+      window.addEventListener("mousemove", (e) => {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.animate({
+          left: `${posX}px`,
+          top: `${posY}px`
+        }, { duration: 500, fill: "forwards" });
+      });
+
+      const interactives = document.querySelectorAll('a, button, .gallery-item, input, textarea, select');
+      interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => cursorOutline.classList.add('hovered'));
+        el.addEventListener('mouseleave', () => cursorOutline.classList.remove('hovered'));
+      });
+    } else {
+      cursorDot.style.display = 'none';
+      cursorOutline.style.display = 'none';
+    }
+
+    // 2. Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // 3. Scroll Reveal Animations
+    const revealElements = document.querySelectorAll('.service-card, .gallery-item, .about-content > *, .contact-info > *, .contact-form, .testimonials-slider-wrapper, .section-gap h2');
+    revealElements.forEach(el => el.classList.add('reveal-hidden'));
+
+    const revealOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      });
+    }, revealOptions);
+
+    revealElements.forEach(el => revealOnScroll.observe(el));
+
+    // 4. Lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    galleryItems.forEach(item => {
+      item.parentElement.style.cursor = 'none'; 
+      item.parentElement.addEventListener('click', () => {
+        lightboxImg.src = item.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg) closeLightbox();
+    });
+
+    // 5. Testimonials Slider
+    const track = document.getElementById('testimonialsTrack');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const dotsContainer = document.getElementById('sliderDots');
+    let currentIndex = 0;
+
+    cards.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('slider-dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.slider-dot');
+
+    function goToSlide(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentIndex = index;
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      goToSlide(currentIndex);
+    }, 5000);
+
+    // 6. Preloader Logic
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 800);
+      }, 500); 
+    });
+
+    // 7. Full Screen Menu Logic
+    const menuBtn = document.getElementById('menuBtn');
+    const navOverlay = document.getElementById('navOverlay');
+    const overlayLinks = document.querySelectorAll('.nav-overlay-link');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        navOverlay.classList.add('active');
+        menuBtn.querySelector('.label').textContent = 'CLOSE';
+        document.body.style.overflow = 'hidden';
+      } else {
+        navOverlay.classList.remove('active');
+        menuBtn.querySelector('.label').textContent = 'MENU';
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    overlayLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        navOverlay.classList.remove('active');
+        menuBtn.querySelector('.label').textContent = 'MENU';
+        document.body.style.overflow = 'auto';
+      });
+    });
+
+    // 8. Parallax Effects
+    const heroVideo = document.querySelector('.hero-video');
+    const aboutImg = document.querySelector('.about-image img');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      
+      // Hero Parallax
+      if (heroVideo && scrollY < window.innerHeight) {
+        heroVideo.style.transform = `translateY(${scrollY * 0.4}px)`;
+      }
+
+      // About Image Parallax
+      if (aboutImg) {
+        const aboutTop = document.getElementById('about').offsetTop;
+        const offset = scrollY - aboutTop + window.innerHeight;
+        if (offset > 0 && offset < window.innerHeight * 2) {
+          aboutImg.style.transform = `translateY(${offset * -0.15}px) scale(1.1)`;
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>

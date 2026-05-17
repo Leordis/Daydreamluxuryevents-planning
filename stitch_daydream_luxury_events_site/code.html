@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daydream Luxury Events | Adriana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e9e1dc",
+                    "tertiary-fixed": "#f0dfd8",
+                    "secondary-fixed": "#ffe088",
+                    "on-tertiary-fixed-variant": "#50443f",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#484743",
+                    "tertiary-container": "#fff3ef",
+                    "primary-container": "#f9f5f0",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#745c00",
+                    "outline": "#79776f",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#34302c",
+                    "surface-container": "#f5ece7",
+                    "secondary-container": "#fed65b",
+                    "secondary-fixed-dim": "#e9c349",
+                    "inverse-on-surface": "#f8efea",
+                    "primary-fixed-dim": "#c9c6c1",
+                    "on-primary-fixed": "#1c1c19",
+                    "surface-tint": "#605e5b",
+                    "primary": "#605e5b",
+                    "error": "#ba1a1a",
+                    "surface": "#fff8f5",
+                    "on-secondary-fixed-variant": "#574500",
+                    "surface-dim": "#e1d8d4",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#d3c3bc",
+                    "on-tertiary-fixed": "#221a16",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "secondary": "#735c00",
+                    "surface-variant": "#e9e1dc",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#fbf2ed",
+                    "on-surface-variant": "#484740",
+                    "inverse-primary": "#c9c6c1",
+                    "on-primary-container": "#72706c",
+                    "surface-container-high": "#efe6e2",
+                    "tertiary": "#685c56",
+                    "background": "#fff8f5",
+                    "on-background": "#1e1b18",
+                    "on-tertiary-container": "#7a6d68",
+                    "primary-fixed": "#e6e2dd",
+                    "outline-variant": "#c9c6bd",
+                    "on-surface": "#1e1b18",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fff8f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max-width": "1280px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.8", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.15em", "fontWeight": "500"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "300"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-frame {
+            position: relative;
+            z-index: 1;
+        }
+        .signature-frame::after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: -12px;
+            bottom: -12px;
+            border: 1px solid #735c00;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .soft-glass {
+            background: rgba(255, 248, 245, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm opacity-95">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max-width mx-auto">
+<div class="font-headline-md text-headline-md tracking-tight text-primary dark:text-primary-fixed">Daydream Luxury Events</div>
+<div class="hidden md:flex items-center space-gap-gutter gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:opacity-80 transition-all active:scale-95">Book a Consultation</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Wedding Celebration" class="w-full h-full object-cover" data-alt="A cinematic, high-end wedding reception scene set in a sun-drenched Florida estate. The shot features expansive floral arrangements of white peonies and blush roses draped over a long, linen-covered table. Warm golden hour light pours through large arched windows, creating a soft, romantic glow. The overall aesthetic is one of airy luxury and sophisticated celebration with a palette of ivory and champagne." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEaLM2t9aopH7oPHvBQ6yufwR8Cvwk70fz1NtHP-rVwHEuYQ5LLNprCREydvW4ou_7iP1eRsrsm0hJyC7MTITwG8ksay7ypgfrDM4d5PJdLz4MehVQ5VSO1XHWX3GstAeSi5HIewG26O72vsX5J4PqxwRYOWy8agYrK5vv__wX-7v7a7-tkgfhASorVF3fisDeXZ1RGMu22KQGbB2-QuQKKzS7y06ikNgJJ0_7hmGz42rARBL-vuSZKf8HALNzYVC3rJVRB2XgNiA"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<div class="relative z-10 text-center text-on-primary-fixed px-margin-mobile">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6 text-white text-shadow-sm italic">Where dreams become celebrations.</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto mb-10 text-shadow-sm">Meticulously curated luxury events for the discerning Florida couple.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-white/10 backdrop-blur-md border border-white text-white px-10 py-4 font-label-caps text-label-caps hover:bg-white hover:text-primary transition-all duration-500 uppercase" href="#contact">Inquire Now</a>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="services">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em] mb-4 block">Exquisite Offerings</span>
+<h2 class="font-headline-md text-headline-md text-primary">Full-Service Event Curation</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Service 1: Large Bento -->
+<div class="md:col-span-8 group cursor-pointer relative overflow-hidden signature-frame bg-surface p-12 transition-all duration-500 hover:shadow-xl">
+<div class="relative z-10 h-full flex flex-col justify-end">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">event_available</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Wedding Planning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Comprehensive management from conceptualization to the final toast, ensuring a seamless journey to your big day.</p>
+</div>
+</div>
+<!-- Service 2: Smaller Bento -->
+<div class="md:col-span-4 group cursor-pointer relative overflow-hidden bg-tertiary-container p-12 transition-all duration-500 hover:shadow-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">palette</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Event Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Visual storytelling that transforms venues into immersive experiences reflecting your unique aesthetic.</p>
+</div>
+<!-- Service 3 -->
+<div class="md:col-span-4 group cursor-pointer relative overflow-hidden bg-surface p-12 border border-outline-variant/30 transition-all duration-500 hover:shadow-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">chair</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Luxury Rentals</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Exclusive access to a curated collection of artisanal furniture, fine china, and bespoke textiles.</p>
+</div>
+<!-- Service 4 -->
+<div class="md:col-span-4 group cursor-pointer relative overflow-hidden bg-primary-container p-12 transition-all duration-500 hover:shadow-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Custom Florals</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bespoke botanical arrangements that capture the essence of romance with seasonal, premium blooms.</p>
+</div>
+<!-- Service 5 -->
+<div class="md:col-span-4 group cursor-pointer relative overflow-hidden bg-surface p-12 border border-outline-variant/30 transition-all duration-500 hover:shadow-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">schedule</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Day-of Coordination</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision execution for the couple who has planned it all but wants to enjoy every moment stress-free.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Mosaic -->
+<section class="py-section-gap overflow-hidden" id="portfolio">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md mb-6 italic">A Gallery of Captured Dreams</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Every event is a unique canvas. Explore our portfolio of black-tie weddings, coastal celebrations, and intimate luxury gatherings across Florida's most prestigious locales.</p>
+</div>
+<a class="font-label-caps text-label-caps border-b border-secondary pb-1 hover:text-secondary transition-colors uppercase" href="#">View All Stories</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-gutter h-[1000px] md:h-[800px]">
+<div class="md:col-span-7 md:row-span-2 overflow-hidden signature-frame">
+<img alt="Grand Reception" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700 cursor-pointer" data-alt="A grand, editorial-style photo of a wedding reception hall with soaring ceilings. Long wooden tables are adorned with hundreds of white candles of varying heights and overflowing garlands of eucalyptus and white hydrangeas. Soft morning light enters through towering arched windows, highlighting the delicate textures of linen napkins and gold-rimmed glassware. The mood is serene, ethereal, and profoundly romantic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnwyNTjPxHGX0MU_Qb2tgunPzycIjR_q8NRrWSB7EUrDyCalTSqMWN3gfsIy7J1qCwdqvNRgXYSwQFn04H7K5AyW8xTZIZk94KRFh-wOFvIeVDujHvlAZjndW_ykZEhHYkb4Zh4s-7y-fEFIgHErmEAg6QrdUAs1uKy21fARAOtYGwudciDTVlb15KQa4mpSEF20Ece3VHNb-WIECpuUppmnweX8nlAU8JvhvY93L6zqhi7xO9PvPjY_qfg9waG90d5EWOaVeDszI"/>
+</div>
+<div class="md:col-span-5 md:row-span-1 overflow-hidden">
+<img alt="Bespoke Florals" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="A close-up, high-detail shot of a wedding bouquet resting on a velvet-covered chair. The bouquet is a lush arrangement of oversized white peonies, garden roses, and delicate sprigs of jasmine vine, tied with a long, trailing champagne-colored silk ribbon. The lighting is soft and directional, creating deep shadows and luminous highlights that emphasize the petals' velvety texture. The aesthetic is purely sophisticated and bridal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ6nqhfQ26hX70iL5XQGFEhoMM7mwJSgRttxR_x17PnfA6x3Ne31J_8-jaNUmI3efCT9DU-2nvg1gXi3epA7eVbML3Jr-Zee3ZFFxXUwyNWuqsLuto0TMw7ItZrWYGDfDfzQZKB0eqHQ1iVOYMdVIizoGw7ut-K4TgywMYk9ukQ3A4tSKq21tYFFjc-hgzB_cWxMP3AKKhsgma9jX3kT7P_d94vVfy7rvN5C8Jf9XxFwVSgtTHiwiD-1aM0cdD_CGsC23Rlmcr-X8"/>
+</div>
+<div class="md:col-span-5 md:row-span-1 grid grid-cols-2 gap-gutter">
+<div class="overflow-hidden h-full">
+<img alt="Table Detail" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Macro photography of a luxury wedding place setting on a sage green linen tablecloth. A gold-rimmed ceramic plate holds a single, perfectly calligraphed place card. Next to the plate are heavy, polished gold utensils and a crystal water glass that catches the light. The setting is intimate and refined, illustrating the meticulous attention to detail in high-end event design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIjAHdi5W_pSu7-a-CeuXuOJ6UytjuiLyJoO995h85Ym0LJociiigYKzoi8cvcuSYy1eBa58PSF9LeXA3aQZhh-JW1b8ti1RNBubpcH0HeVB-ufxuQtt_NTHVeE3hppxR3Oxlh3AWoSFU8eKjvUkXhwGYP7ela6fHeI2j4ciaMUsrCwfh1p3sE760makx7ftgBIBYXmXPkkgINkHMbUb_FNpMASNzALZKOv0bREAsTFRkNEoSYYhVaJ9FS4g3ppb5qHWjddZPQTcc"/>
+</div>
+<div class="overflow-hidden h-full bg-secondary-container/20 flex items-center justify-center p-8">
+<p class="font-headline-sm text-headline-sm text-center italic text-primary">"The details are not the details. They make the design."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Adriana Section -->
+<section class="py-section-gap bg-surface" id="about">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+<div class="relative order-2 md:order-1">
+<div class="signature-frame">
+<img alt="Adriana, Founder of Daydream Events" class="w-full aspect-[4/5] object-cover shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqQYwB9uru2EZfHw0SitIo9sKTmY11xchORHqYWTBwFMO6NYbzifiPwpgq_l3OmH1xuYki03BAyyRfH0bb0XVDRuXeBS9_j2Gn43mTc7kIAHWLDmlPs3MNINyaEjCJDmiDZnx4vPBGoomJCjdhwxAq1lnefS4brgtYZ4qVMNQ7h7DBbXmwq8n_4U3ri1__d2gk_KGc9IluAbCYMOj72ipnlfhLiMZao8hEG-fW9bSLryVmLRRX3odaLr2FsFY21D3_dF653WcUKdc"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em] mb-4 block">The Visionary</span>
+<h2 class="font-headline-md text-headline-md mb-8">Meet Adriana</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>With a background in fine arts and a passion for the effortless elegance of the Florida coast, I founded Daydream Luxury Events to bridge the gap between imagination and reality.</p>
+<p>My philosophy is rooted in "Editorial Minimalism"—where every element serves a purpose and beauty is found in the intentional. I believe that a luxury event should feel personal, never staged, and leave a lasting impression of refined joy.</p>
+<p>When I'm not scouting new garden venues in Palm Beach or selecting the perfect sage-toned silks, you'll find me at the beach with a sketchbook, drawing inspiration from the very landscapes that host my most beautiful celebrations.</p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<img alt="Signature Signature" class="w-20 h-20 rounded-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLLJUE20DgUM1RFJqTWA0XLMvLgbMwAOJlpvF9n1t31I4jkRglhhKjzQkDqtpe6nE0i2s1bsllbf4F7jZLx8Dt9BmgtHwQApsNCk9pBJynO5pNpCODrfZ-DQc4S3FCG67_Tx7feUd7WeoGztoHZ8kOpJH6G2opJV45wir47RZNVxftKCNMWOMey4na12WI7t1105RUN67358JufWM19D3_9xANvA3Nvxh8GcFOWI2Fp7nhe-LrYxBZbcMItFopEo9E4OTL9pDzyB4"/>
+<p class="font-headline-sm italic text-primary">Adriana V.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap bg-surface-container-low px-margin-mobile">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md italic">Kind Words from Our Couples</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface p-12 soft-glass border border-outline-variant/20 flex flex-col items-center text-center shadow-lg shadow-primary/5">
+<div class="text-secondary mb-6 flex">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-8 italic">"Adriana turned our vision of a coastal black-tie wedding into a breathtaking reality. Her eye for design is unmatched, and her calm presence made the entire process a joy."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-label-caps font-bold text-primary">Eleanor &amp; James</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Palm Beach, 2023</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface p-12 soft-glass border border-outline-variant/20 flex flex-col items-center text-center shadow-lg shadow-primary/5 scale-105 z-10">
+<div class="text-secondary mb-6 flex">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-8 italic">"The floral design alone was worth it. Our guests are still talking about the scent of peonies that filled the ballroom. Adriana is truly an artist who understands luxury."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-label-caps font-bold text-primary">Isabella &amp; Marc</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Miami Shores, 2024</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface p-12 soft-glass border border-outline-variant/20 flex flex-col items-center text-center shadow-lg shadow-primary/5">
+<div class="text-secondary mb-6 flex">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-8 italic">"A seamless experience from start to finish. We didn't have to worry about a single detail on our wedding day. Adriana’s coordination was flawless."</p>
+<div class="mt-auto">
+<p class="font-label-caps text-label-caps font-bold text-primary">Sophia &amp; David</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">Naples, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap bg-surface overflow-hidden relative" id="contact">
+<div class="absolute right-0 top-0 w-1/3 h-full bg-tertiary-container/30 -z-10 translate-x-1/4 skew-x-12"></div>
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em] mb-4 block">Begin Your Journey</span>
+<h2 class="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md mb-8">Tell us about your daydream.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">We limit our bookings each year to ensure every client receives our undivided attention and the highest level of service. Inquire today to secure your date in our calendar.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Email Us</p>
+<p class="font-body-md">hello@daydreamluxury.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Studio</p>
+<p class="font-body-md">Palm Beach, FL | By Appointment Only</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant/30 p-10 md:p-16 shadow-2xl shadow-primary/5">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">First Name</label>
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="Adriana" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">Last Name</label>
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="Vargas" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">Email Address</label>
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="hello@example.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">Event Date</label>
+<input class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors" type="date"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">Event Type</label>
+<select class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors appearance-none">
+<option>Wedding Planning</option>
+<option>Corporate Gala</option>
+<option>Luxury Party</option>
+<option>Destination Event</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps mb-2 block uppercase text-on-surface-variant">How can we help you?</label>
+<textarea class="w-full border-0 border-b border-outline-variant bg-transparent py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="Tell us about your vision..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 font-label-caps text-label-caps uppercase tracking-widest hover:opacity-90 transition-all shadow-lg" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed mb-6">Daydream Luxury Events</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xs">Curating ethereal experiences for life's most precious celebrations across the Sunshine State.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-4">Quick Links</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#services">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#portfolio">Portfolio</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#about">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#contact">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-4">Stay Inspired</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Join our newsletter for event inspiration and planning tips.</p>
+<div class="flex">
+<input class="bg-transparent border-0 border-b border-outline-variant py-2 flex-grow focus:ring-0 focus:border-secondary" placeholder="Email Address" type="email"/>
+<button class="ml-4 material-symbols-outlined text-secondary">arrow_forward</button>
+</div>
+<div class="mt-12 text-on-surface-variant text-[10px] uppercase tracking-widest">
+                    © 2024 Daydream Luxury Events. All Rights Reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
