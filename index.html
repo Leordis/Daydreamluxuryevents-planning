@@ -155,10 +155,10 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="section-gap">
+  <section id="about" class="section-gap reveal">
     <div class="container about-grid">
-      <div class="about-image signature-frame">
-        <img src="foto de la dueña/9C706F66-1818-429E-ACD1-0B4B7BBCFD87.PNG" alt="Adriana" class="img-cover" style="aspect-ratio: 4/5; object-position: center 35%;">
+      <div class="about-image signature-frame reveal-hidden">
+        <img src="foto_de_la_duena/9C706F66-1818-429E-ACD1-0B4B7BBCFD87.PNG" alt="Adriana" class="img-cover" style="aspect-ratio: 4/5; object-position: center 35%;">
       </div>
       <div class="about-content">
         <span class="label tag tag-sage">The Visionary</span>
@@ -466,13 +466,11 @@
 
     // 8. Parallax Effects
     const heroVideo = document.querySelector('.hero-video');
-    const aboutImg = document.querySelector('.about-image img');
 
     window.addEventListener('scroll', () => {
       // Disable parallax on mobile
       if (window.innerWidth <= 768) {
         if (heroVideo) heroVideo.style.transform = 'none';
-        if (aboutImg) aboutImg.style.transform = 'scale(1.1)'; // Reset to initial CSS scale
         return;
       }
 
@@ -481,15 +479,6 @@
       // Hero Parallax
       if (heroVideo && scrollY < window.innerHeight) {
         heroVideo.style.transform = `translateY(${scrollY * 0.4}px)`;
-      }
-
-      // About Image Parallax
-      if (aboutImg) {
-        const aboutTop = document.getElementById('about').offsetTop;
-        const offset = scrollY - aboutTop + window.innerHeight;
-        if (offset > 0 && offset < window.innerHeight * 2) {
-          aboutImg.style.transform = `translateY(${offset * -0.15}px) scale(1.1)`;
-        }
       }
     });
 
